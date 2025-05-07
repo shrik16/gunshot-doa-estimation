@@ -1,9 +1,14 @@
 # gunshot-doa-estimation
-Microphone Array-Based Direction of Arrival (DoA) Estimation for Gunshot Detection
-Overview
+
+**Microphone Array-Based Direction of Arrival (DoA) Estimation for Gunshot Detection**
+
+
+***Overview***
+
 This project implements a Direction of Arrival (DoA) estimation system for gunshot detection using a microphone array. It uses the Generalized Cross-Correlation with Phase Transform (GCC-PHAT) method to estimate the direction of a gunshot sound source in a simulated environment with added noise and reverberation. Visualizations are included to help understand the results.
 
-Features
+***Features***
+
 Simulates a tetrahedral microphone array with 4 microphones.
 
 Uses GCC-PHAT to estimate the DoA of a gunshot signal.
@@ -16,12 +21,12 @@ Visualizes the microphone array and DoA estimates in 3D.
 
 Plots the received signals at each microphone over time.
 
-Requirements
+***Requirements***
 Python 3.8+
 
 Dependencies listed in requirements.txt
 
-Installation
+***Installation***
 Clone the repository:
 
 plain
@@ -61,7 +66,7 @@ output/microphone_array_doa.png: A 3D plot showing the microphone array, true di
 
 output/received_signals.png: A time-domain plot of the signals received at each microphone.
 
-Project Structure
+***Project Structure***
 main.py: Main script for DoA estimation and visualization.
 
 requirements.txt: List of Python dependencies.
@@ -70,7 +75,8 @@ README.md: Project documentation.
 
 output/: Folder where visualization plots are saved (created automatically).
 
-Methodology
+***Methodology***
+
 Microphone Array: A tetrahedral array with 4 microphones is simulated. Positions are defined in 3D space.
 
 Signal Simulation: A synthetic gunshot signal (impulsive, wideband) is generated with a known direction.
@@ -83,25 +89,28 @@ DoA Estimation: TDOA values are used to estimate the azimuth and elevation angle
 
 Visualization: Uses matplotlib to plot the microphone array in 3D and the received signals over time.
 
-Results
+***Results***
+
 The script outputs the estimated DoA in terms of azimuth and elevation angles. Visualizations provide a clearer understanding of the spatial arrangement and signal characteristics.
 
-Limitations
+***Limitations***
+
 This is a simulation-based project and does not use real microphone data.
 
 Performance may vary in real-world scenarios with complex noise and reverberation.
 
 The tetrahedral array assumes a simplified environment.
 
-Future Improvements
+***Future Improvements***
+
 Add preprocessing to handle reverberation (e.g., dereverberation techniques).
 
 Integrate real microphone data using hardware like Arduino or Raspberry Pi.
 
 Extend to multiple sound sources.
 
-License
+***License***
 MIT License - feel free to use and modify this code.
 
-Author
-[Your Name] - [Your Contact Info]
+***Author***
+**ShriK**
