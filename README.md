@@ -7,6 +7,10 @@
 
 This project implements a Direction of Arrival (DoA) estimation system for gunshot detection using a microphone array. It uses the Generalized Cross-Correlation with Phase Transform (GCC-PHAT) method to estimate the direction of a gunshot sound source in a simulated environment with added noise and reverberation. Visualizations are included to help understand the results.
 
+### ***Disclaimer***
+
+This project is intended for educational purposes only. It simulates gunshot direction of arrival (DoA) estimation in a controlled environment and should not be relied upon for real-world applications, such as security or law enforcement, due to its limitations, including the use of synthetic data, simplified assumptions, and lack of real-world validation.
+
 
 ### ***Features***
 
