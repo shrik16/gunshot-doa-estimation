@@ -1,13 +1,14 @@
-# gunshot-doa-estimation
+## gunshot-doa-estimation
 
-**Microphone Array-Based Direction of Arrival (DoA) Estimation for Gunshot Detection**
+# **Microphone Array-Based Direction of Arrival (DoA) Estimation for Gunshot Detection**
 
 
-***Overview***
+### ***Overview***
 
 This project implements a Direction of Arrival (DoA) estimation system for gunshot detection using a microphone array. It uses the Generalized Cross-Correlation with Phase Transform (GCC-PHAT) method to estimate the direction of a gunshot sound source in a simulated environment with added noise and reverberation. Visualizations are included to help understand the results.
 
-***Features***
+
+### ***Features***
 
 Simulates a tetrahedral microphone array with 4 microphones.
 
@@ -21,52 +22,62 @@ Visualizes the microphone array and DoA estimates in 3D.
 
 Plots the received signals at each microphone over time.
 
-***Requirements***
+
+### ***Requirements***
+
 Python 3.8+
 
 Dependencies listed in requirements.txt
 
-***Installation***
+### ***Installation***
+
 Clone the repository:
 
-plain
+bash
+```
 
-
-git clone https://github.com/your-username/gunshot-doa-estimation.git
+git clone https://github.com/shrik16/gunshot-doa-estimation.git
 cd gunshot-doa-estimation
+```
 Create a virtual environment and activate it:
 
-plain
-
+```
 
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
 Install dependencies:
 
-plain
 
+```
 
 pip install -r requirements.txt
+```
+
 Usage
 Run the main script to simulate DoA estimation and generate visualizations:
 
-plain
-
+```
 
 python main.py
+```
+
 The script will:
 
-Simulate a gunshot signal, add noise and reverberation, and estimate the DoA.
+**Simulate a gunshot signal, add noise and reverberation, and estimate the DoA.**
 
-Print the results (azimuth and elevation angles) to the console.
+**Print the results (azimuth and elevation angles) to the console.**
 
-Save two plots in the output folder:
+**Save two plots in the output folder:**
 
-output/microphone_array_doa.png: A 3D plot showing the microphone array, true direction, and estimated direction.
+**output/microphone_array_doa.png: A 3D plot showing the microphone array, true direction, and estimated direction.**
 
-output/received_signals.png: A time-domain plot of the signals received at each microphone.
+**output/received_signals.png: A time-domain plot of the signals received at each microphone.**
 
-***Project Structure***
+
+### ***Project Structure***
+
 main.py: Main script for DoA estimation and visualization.
 
 requirements.txt: List of Python dependencies.
@@ -75,7 +86,8 @@ README.md: Project documentation.
 
 output/: Folder where visualization plots are saved (created automatically).
 
-***Methodology***
+
+### ***Methodology***
 
 Microphone Array: A tetrahedral array with 4 microphones is simulated. Positions are defined in 3D space.
 
@@ -89,11 +101,13 @@ DoA Estimation: TDOA values are used to estimate the azimuth and elevation angle
 
 Visualization: Uses matplotlib to plot the microphone array in 3D and the received signals over time.
 
-***Results***
+
+### ***Results***
 
 The script outputs the estimated DoA in terms of azimuth and elevation angles. Visualizations provide a clearer understanding of the spatial arrangement and signal characteristics.
 
-***Limitations***
+
+### ***Limitations***
 
 This is a simulation-based project and does not use real microphone data.
 
@@ -101,7 +115,8 @@ Performance may vary in real-world scenarios with complex noise and reverberatio
 
 The tetrahedral array assumes a simplified environment.
 
-***Future Improvements***
+
+### ***Future Improvements***
 
 Add preprocessing to handle reverberation (e.g., dereverberation techniques).
 
@@ -109,8 +124,11 @@ Integrate real microphone data using hardware like Arduino or Raspberry Pi.
 
 Extend to multiple sound sources.
 
-***License***
-MIT License - feel free to use and modify this code.
 
-***Author***
+**MIT License - feel free to use and modify this code.**
+
+
+
+### ***Author***
+
 **ShriK**
